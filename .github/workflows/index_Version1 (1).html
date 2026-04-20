@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIOM IVECO App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff3d00 0%, #002b5c 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            background-color: #002b5c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff3d00;
+        }
+
+        main {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #ff3d00;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .menu-card {
+            background-color: #f5f5f5;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ff3d00;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateX(5px);
+        }
+
+        .menu-card h3 {
+            color: #002b5c;
+            margin-bottom: 8px;
+        }
+
+        .menu-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #002b5c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🚗 FIOM IVECO App</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contatti</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Benvenuto</h2>
+        <p>Questa è la FIOM IVECO App ufficiale. Una piattaforma moderna e intuitiva per gestire i tuoi servizi.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Servizi Disponibili</h2>
+        <div class="menu-card">
+            <h3>📋 Gestione Risorse</h3>
+            <p>Accedi a tutti i tuoi documenti e risorse in un unico posto.</p>
+        </div>
+        <div class="menu-card">
+            <h3>📊 Dashboard Analytics</h3>
+            <p>Visualizza statistiche e metriche in tempo reale.</p>
+        </div>
+        <div class="menu-card">
+            <h3>🔔 Notifiche</h3>
+            <p>Ricevi aggiornamenti importanti e avvisi in tempo reale.</p>
+        </div>
+        <div class="menu-card">
+            <h3>⚙️ Impostazioni</h3>
+            <p>Personalizza la tua esperienza con le impostazioni avanzate.</p>
+        </div>
+    </section>
+
+    <section id="news">
+        <h2>Ultime Notizie</h2>
+        <p><strong>20 Aprile 2026:</strong> Lancio della nuova versione dell'app con interfaccia migliorata!</p>
+        <p><strong>10 Aprile 2026:</strong> Aggiunto supporto per più lingue.</p>
+        <p><strong>1 Aprile 2026:</strong> Nuove funzionalità di sicurezza implementate.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contattaci</h2>
+        <p>📧 Email: info@fiomiveco.it</p>
+        <p>📞 Telefono: +39 02 1234 5678</p>
+        <p>🌐 Website: www.fiomiveco.it</p>
+        <p>📍 Indirizzo: Via FIOM, 1 - Milano, Italia</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 FIOM IVECO. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
